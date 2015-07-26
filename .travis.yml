@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: Pangu.Objective-C.xcodeproj
 xcode_scheme: Pangu.Objective-CTests
+xcode_sdk: iphonesimulator
