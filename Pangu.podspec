@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
   s.author             = { "Cee" => "cee@chu2byo.com" }
-  s.social_media_url   = "https://twitter.com/Ceecirno"
 
   s.ios.platform = :ios, '5.0'
   s.osx.platform = :iox, '10.7'
