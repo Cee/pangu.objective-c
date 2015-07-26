@@ -1,5 +1,7 @@
 # Pangu.objective-c
 
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/Pangu/badge.png)](http://cocoapods.org/?q=Pangu)
+
 Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean), half-width English, digit and symbol characters.
 
 * Go version: [pangu.go](https://github.com/vinta/pangu)
