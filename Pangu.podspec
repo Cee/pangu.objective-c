@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Pangu"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "Paranoid text spacing in Objective-C"
   s.description  = "Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean) and half-width characters (alphabetical letters, numerical digits and symbols)."
 
