@@ -6,14 +6,14 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Cee/pangu.objective-c"
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "Cee" => "cee@chu2byo.com" }
+  s.author       = { "Cee" => "cee@chu2byo.com" }
 
-  s.ios.platform = :ios, '5.0'
-  s.osx.platform = :iox, '10.7'
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.7'
 
   s.source       = { :git => "https://github.com/Cee/pangu.objective-c.git", :tag => "v#{s.version.to_s}" }
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files = "Classes", "Classes/**/*.{h,m}"
 end
