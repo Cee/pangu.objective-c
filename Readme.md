@@ -17,14 +17,18 @@ Paranoid text spacing for good readability, to automatically insert whitespace b
 
 The simplest option is to use `pod "Pangu"`.
 
-You can also add the two files `NSString+Pangu.h/m` to your project. There are no further requirements.
+You can also add the `Classes` folder to your project, and then `import Pangu.h`. There are no further requirements.
 
 ## Usage
 
 ```objective-c
-#import "NSString+Pangu.h"
+#import "Pangu.h"
 
 [NSString spacing:@"請問Jackie的鼻子有幾個？123個！"];
+// 請問 Jackie 的鼻子有幾個？123 個！
+
+UILabel *label = [UILable new];
+label.text = @"請問Jackie的鼻子有幾個？123個！";
 // 請問 Jackie 的鼻子有幾個？123 個！
 ```
 
