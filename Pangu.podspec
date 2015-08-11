@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.author       = { "Cee" => "cee@chu2byo.com" }
 
   s.ios.deployment_target = '5.0'
-  s.osx.deployment_target = '10.7'
 
   s.source       = { :git => "https://github.com/Cee/pangu.objective-c.git", :tag => "v#{s.version.to_s}" }
 
