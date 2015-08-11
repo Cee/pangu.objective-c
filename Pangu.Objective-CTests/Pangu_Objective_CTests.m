@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "NSString+Pangu.h"
+#import "Pangu.h"
 
 @interface Pangu_Objective_CTests : XCTestCase
 
@@ -28,6 +28,7 @@
 
 - (void)testSpacingText {
     XCTAssertEqualObjects([NSString spacing:@"請問Jackie的鼻子有幾個？123個！"], @"請問 Jackie 的鼻子有幾個？123 個！");
+    
     XCTAssertEqualObjects([NSString spacing:@"請問 Jackie 的鼻子有幾個？123 個！"], @"請問 Jackie 的鼻子有幾個？123 個！");
 }
 
@@ -255,6 +256,12 @@
 
 - (void)testSlash {
     XCTAssertEqualObjects([NSString spacing:@"前面/後面"], @"前面 / 後面");
+}
+
+- (void)testSetText {
+    UILabel *label = [UILabel new];
+    label.text = @"請@vinta吃大便";
+    XCTAssertEqualObjects(label.text, @"請 @vinta 吃大便");
 }
 
 - (void)testPerformanceExample {

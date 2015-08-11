@@ -14,7 +14,8 @@
 		9281A7B81B6526B400485A0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9281A7B71B6526B400485A0B /* Images.xcassets */; };
 		9281A7BB1B6526B400485A0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9281A7B91B6526B400485A0B /* LaunchScreen.xib */; };
 		9281A7C71B6526B400485A0B /* Pangu_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281A7C61B6526B400485A0B /* Pangu_Objective_CTests.m */; };
-		9281A7DB1B6537B200485A0B /* NSString+Pangu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281A7DA1B6537B200485A0B /* NSString+Pangu.m */; };
+		92CF04EA1B7972AA00484960 /* NSString+Pangu.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CF04E91B7972AA00484960 /* NSString+Pangu.m */; };
+		92CF04ED1B7972C300484960 /* UILabel+Pangu.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CF04EC1B7972C300484960 /* UILabel+Pangu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,11 @@
 		9281A7C01B6526B400485A0B /* Pangu.Objective-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pangu.Objective-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9281A7C51B6526B400485A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9281A7C61B6526B400485A0B /* Pangu_Objective_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pangu_Objective_CTests.m; sourceTree = "<group>"; };
-		9281A7D91B6537B200485A0B /* NSString+Pangu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Pangu.h"; path = "../Classes/NSString+Pangu.h"; sourceTree = "<group>"; };
-		9281A7DA1B6537B200485A0B /* NSString+Pangu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Pangu.m"; path = "../Classes/NSString+Pangu.m"; sourceTree = "<group>"; };
+		92CF04E81B7972AA00484960 /* NSString+Pangu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Pangu.h"; sourceTree = "<group>"; };
+		92CF04E91B7972AA00484960 /* NSString+Pangu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Pangu.m"; sourceTree = "<group>"; };
+		92CF04EB1B7972C300484960 /* UILabel+Pangu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Pangu.h"; sourceTree = "<group>"; };
+		92CF04EC1B7972C300484960 /* UILabel+Pangu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Pangu.m"; sourceTree = "<group>"; };
+		92CF04EE1B79752100484960 /* Pangu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pangu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		9281A7A91B6526B400485A0B /* Pangu.Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				92CF04E71B7972AA00484960 /* Classes */,
 				9281A7AE1B6526B400485A0B /* AppDelegate.h */,
 				9281A7AF1B6526B400485A0B /* AppDelegate.m */,
 				9281A7B11B6526B400485A0B /* ViewController.h */,
@@ -91,8 +96,6 @@
 				9281A7B41B6526B400485A0B /* Main.storyboard */,
 				9281A7B71B6526B400485A0B /* Images.xcassets */,
 				9281A7B91B6526B400485A0B /* LaunchScreen.xib */,
-				9281A7D91B6537B200485A0B /* NSString+Pangu.h */,
-				9281A7DA1B6537B200485A0B /* NSString+Pangu.m */,
 				9281A7AA1B6526B400485A0B /* Supporting Files */,
 			);
 			path = "Pangu.Objective-C";
@@ -123,6 +126,18 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		92CF04E71B7972AA00484960 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92CF04EE1B79752100484960 /* Pangu.h */,
+				92CF04E81B7972AA00484960 /* NSString+Pangu.h */,
+				92CF04E91B7972AA00484960 /* NSString+Pangu.m */,
+				92CF04EB1B7972C300484960 /* UILabel+Pangu.h */,
+				92CF04EC1B7972C300484960 /* UILabel+Pangu.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -224,8 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CF04ED1B7972C300484960 /* UILabel+Pangu.m in Sources */,
 				9281A7B31B6526B400485A0B /* ViewController.m in Sources */,
-				9281A7DB1B6537B200485A0B /* NSString+Pangu.m in Sources */,
+				92CF04EA1B7972AA00484960 /* NSString+Pangu.m in Sources */,
 				9281A7B01B6526B400485A0B /* AppDelegate.m in Sources */,
 				9281A7AD1B6526B400485A0B /* main.m in Sources */,
 			);
