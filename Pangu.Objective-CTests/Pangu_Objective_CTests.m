@@ -262,6 +262,8 @@
     UILabel *label = [UILabel new];
     label.text = @"請@vinta吃大便";
     XCTAssertEqualObjects(label.text, @"請 @vinta 吃大便");
+    label.text = nil;
+    XCTAssertEqualObjects(label.text, @"");
 }
 
 - (void)testPerformanceExample {

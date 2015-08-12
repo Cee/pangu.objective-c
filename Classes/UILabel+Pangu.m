@@ -32,6 +32,9 @@
 
 - (void)pg_setText:(NSString *)string
 {
+    if (string == nil) {
+       string = @"";
+    }
     [self pg_setText:[NSString spacing:string]];
 }
 
