@@ -1,8 +1,7 @@
 language: objective-c
-# xcode_project: Pangu.Objective-C.xcodeproj
-# xcode_scheme: Pangu.Objective-CTests
-# xcode_sdk: iphonesimulator
+osx_image: xcode8
 script:
-  - xctool -project Pangu.Objective-C.xcodeproj -scheme Pangu.Objective-CTests build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - xcodebuild -scheme Pangu.Objective-CTests -project Pangu.Objective-C.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - sleep 3
